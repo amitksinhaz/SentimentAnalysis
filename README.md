@@ -1,25 +1,19 @@
 # Sentiment Analysis of Movie Review
 
-Sentiment analysis of movie review using neural network. Looking at a review, the CNN model predicts if the sentiment expressed about a movie is positive or negative.
-
 [//]: # (Image References)
 
 [image1]: ./images/sentiment_network.png "Sentiment Network for Negative Review "
 [image2]: ./images/sentiment_network_pos.png "Sentiment Network for Positive Review"
 
-
-# Classification of Dog Breeds
-
 ## Introduction
 
-This is a dog classification project using the Convolutional Neural Networks (CNN)! In this Udacity project for AI, we will learn how to build a deep learning pipeline to train and test CNN that can be used within a web or mobile app to process user provided images of dogs. Given an image of a dog, the trained CNN model algorithm will estimate the probability of the canine’s breed. For fun, if supplied with a human image, the model will predict the dog breed the human resembles!.
-
-
+Sentiment analysis of movie review using neural network. Looking at a review, the CNN model predicts if the sentiment expressed about a movie is positive or negative.
 
 ## Description 
 
-Along with exploring state-of-the-art CNN models for classification and localization, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+This is a Udacity project to predict whether a movie review is negative or positive based on the reviews entered by viewers of a movie. You should concepts like forward and back-propagation, stochastic gradient descent, mean squared error and how to split data for training and testing the neural network. The project begins by creating a simple network, and then makes it better by reducing noise in text vocabulary, converting text to numbers using hot-encoding and by analyzing ineffinciencies in the network.
 
+Following images show the neural network. Layer_0 is the input, layer_1 is the hidden layer and layer_2 is the output for positive and negative reviews.
 
 ![Sentiment Network for Negative Review][image1]
 ![Sentiment Network for Positive Review][image2]
@@ -27,19 +21,23 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 ## Getting Started
 
 ### Clone the repository and navigate to the downloaded folder.
-* git clone https://github.com/udacity/deep-learning-v2-pytorch.git
+* git clone https://github.com/amitksinhaz/SentimentAnalysis.git
 * cd project-directory
 	
 ### Data
-* Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
-* Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
-	
+
+Download the data.zip file from data folder. Unzip the files at the roote folder. The zipped file contains two files:
+* labels.txt - this has POSITIVE or NEGATIVE value
+* reviews.txt - this is the text representing the movie review
+
+
 ### Setting up Python Environment
 
 * Refer to link https://github.com/udacity/deep-learning-v2-pytorch/blob/master/README.md
 * In summary, install the miniconda environment followed by the machine learning libraries including PyTorch
 
 ### Jupyter Notebook
-* From the repo, dog_app Python notebook files can be used
-* jupyter notebook dog_app.ipynb
+From the repo, Python notebooks files can be used:
+* jupyter notebook Sentiment_Classification_Projects.ipynb
+* jupyter notebook Sentiment_Classification_Solutions.ipynb
 
