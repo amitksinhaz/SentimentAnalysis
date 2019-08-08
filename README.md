@@ -37,7 +37,7 @@ Download the data.zip file from data folder. Unzip the files at the roote folder
 * In summary, install the miniconda environment followed by the machine learning libraries including PyTorch
 
 ### Jupyter Notebook
-From the repo, Python notebooks files can be used:
+From the repo, Python notebooks files can be used - on eiwth project description and another with solutions:
 * jupyter notebook Sentiment_Classification_Projects.ipynb
 * jupyter notebook Sentiment_Classification_Solutions.ipynb
 
